@@ -25,7 +25,7 @@
     border-radius: 0;
     max-height: 100%;
     width: 300px;
-    box-shadow: #806a56 20px 20px;
+    box-shadow: #806a56 10px 10px;
 }
 @media only screen and (min-width: 800px){
     #resume{

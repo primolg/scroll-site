@@ -1,11 +1,19 @@
 import "./contact.css";
+import { useState } from "react";
 import { AiFillLinkedin, AiFillGithub, AiOutlinePhone } from 'react-icons/ai'
 import { MdEmail } from 'react-icons/md'
-import { BsFillCheckCircleFill } from 'react-icons/bs'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+
+    const [loaded, setLoaded] = useState(false)
+    if (!loaded){
+        setTimeout(()=>{
+            setLoaded(true);
+        }, 100
+        );
+    }
 
     async function copyTextToClipboard(text) {
         if ('clipboard' in navigator) {
@@ -27,7 +35,7 @@ function Contact() {
     }
 
   return(
-    <div id="page-outer-div">
+    <div id="page-outer-div" className={loaded ? "active" : ""}>
       <div id="contact">
         <a href="https://www.linkedin.com/in/primo-ledeboer-gill/">
           <AiFillLinkedin />

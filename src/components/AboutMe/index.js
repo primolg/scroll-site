@@ -1,9 +1,19 @@
 import "./about-me.css";
+import { useState } from "react";
 import primoPhone from "./about-me-img.jpg";
 
 function AboutMe() {
+
+  const [loaded, setLoaded] = useState(false)
+    if (!loaded){
+        setTimeout(()=>{
+            setLoaded(true);
+        }, 100
+        );
+    }
+
   return(
-    <div id="page-outer-div">
+    <div id="page-outer-div" className={loaded ? "active" : ""}>
       <div id="about-me">
         <div id="img-holder">
           <img src={primoPhone} alt="primo gill portrait" />

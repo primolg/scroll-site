@@ -3,12 +3,20 @@ import { BiDownload } from 'react-icons/bi'
 import 'react-toastify/dist/ReactToastify.css';
 import pdf from './primo-gill-resume.pdf'
 import resumeImg from './primo-gill-resume.png'
-import { Document, Page } from 'react-pdf';
+import { useState } from "react";
 
 function Resume() {
 
+  const [loaded, setLoaded] = useState(false)
+    if (!loaded){
+        setTimeout(()=>{
+            setLoaded(true);
+        }, 100
+        );
+    }
+
   return(
-    <div id="page-outer-div">
+    <div id="page-outer-div" className={loaded ? "active" : ""}>
       <div id="resume">
           <a id="download-div" href={pdf} download="primo-gill-resume.pdf">
             <BiDownload />

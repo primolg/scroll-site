@@ -10,7 +10,8 @@
   align-items: center;
   width: 100vw;
   height:100vh;
-  background-color: #423939;
+  /* background-color: #423939; */
+  background-color: #2b2424;
 }
 
 #header{
@@ -35,6 +36,7 @@
   width: 80vw;
   height:75vh;
   box-shadow: #2f2828 20px 20px;
+  box-shadow: #1d1818 20px 20px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -52,7 +54,7 @@
   .main{
     flex-direction: column;
     width: 86vw;
-    height: 80vh
+    height: 87vh
   }
 }
 
@@ -135,7 +137,27 @@
 }
 
 #page-outer-div{
+  position: relative;
+  opacity: 0;
+  top: 10%;
   width: 100%;
   height: 100%;
   overflow: scroll;
+  transition: 0.7s;
+}
+@media only screen and (max-width: 600px){
+  #page-outer-div.active{
+    opacity: 1;
+    top: 0;
+  }
+}
+@media only screen and (min-width: 600px){
+  #page-outer-div{
+    top: 0;
+    left: 10%;
+  }
+  #page-outer-div.active{
+    opacity: 1;
+    left: 0;
+  }
 }
