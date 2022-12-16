@@ -39,6 +39,10 @@
   overflow: hidden;
 }
 @media only screen and (max-width: 600px){
+  #root{
+    align-items: unset;
+    padding-top: 20px;
+  }
   #header{
     font-size: medium;
   }

@@ -44,10 +44,8 @@
     }
 }
 
-@media only screen and (min-width: 1000px){
-    #resume-img{
-        border-radius: 0;
-        max-height: 100%;
-        width: 30%;
+@media only screen and (max-width: 600px){
+    #download-div{
+        margin-top: 0;
     }
 }
