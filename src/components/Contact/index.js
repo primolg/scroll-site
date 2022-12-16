@@ -11,7 +11,7 @@ function Contact() {
     if (!loaded){
         setTimeout(()=>{
             setLoaded(true);
-        }, 100
+        }, 1
         );
     }
 
