@@ -10,8 +10,7 @@
   align-items: center;
   width: 100vw;
   height:100vh;
-  /* background-color: #423939; */
-  background-color: #2b2424;
+  background-color: #3f3636;
 }
 
 #header{
@@ -114,7 +113,7 @@
   color: #514326;
   width: 85%;
   height: 100%;
-  transition: 0.8s;
+  transition: 0.7s;
   overflow: scroll;
 }
 
@@ -139,11 +138,11 @@
 #page-outer-div{
   position: relative;
   opacity: 0;
-  top: 10%;
+  top: 1%;
   width: 100%;
   height: 100%;
   overflow: scroll;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 @media only screen and (max-width: 600px){
   #page-outer-div.active{
@@ -154,7 +153,7 @@
 @media only screen and (min-width: 600px){
   #page-outer-div{
     top: 0;
-    left: 10%;
+    left: 1%;
   }
   #page-outer-div.active{
     opacity: 1;
