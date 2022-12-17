@@ -19,18 +19,28 @@
   font-size: larger;
   font-weight: 300;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 #header div{
   display: flex;
   align-items:flex-end;
 }
 
+#header img{
+  max-height: 3.8em;
+  width: auto;
+  margin-bottom: -31px;
+  margin-right: -10px;
+}
+
 #name{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size:x-large;
   margin-right: 15px;
 }
 
 .main{
+  z-index: 1;
   display: flex;
   width: 80vw;
   height:75vh;
@@ -45,7 +55,7 @@
     padding-top: 20px;
   }
   #header{
-    font-size: medium;
+    font-size:medium;
   }
   #name{
     font-size: large;
@@ -54,6 +64,9 @@
     flex-direction: column;
     width: 86vw;
     height: 87vh
+  }
+  #header img{
+    height: 0;
   }
 }
 

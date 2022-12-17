@@ -27,7 +27,7 @@
     width: 300px;
     box-shadow: #806a56 10px 10px;
 }
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 600px){
     #resume{
         flex-direction: row;
         justify-content: space-evenly;
@@ -41,6 +41,13 @@
         border-radius: 0;
         max-height: 100%;
         width: 40%;
+    }
+}
+@media only screen and (min-width: 1300px){
+    #resume-img{
+        border-radius: 0;
+        max-height: 100%;
+        width: 30%;
     }
 }
 

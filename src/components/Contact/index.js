@@ -26,7 +26,7 @@ function Contact() {
     // Asynchronously call copyTextToClipboard
         copyTextToClipboard("+19144910993")
         .then(() => {
-            toast.dark("phone number copied")
+            toast("phone number copied")
         })
         .catch((err) => {
             console.log(err);
