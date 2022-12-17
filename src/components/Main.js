@@ -2,6 +2,7 @@ import { useState } from "react";
 import AboutMe from "./AboutMe/index.js";
 import Contact from "./Contact/index.js";
 import Resume from "./Resume/index.js";
+import Projects from "./Projects/index.js";
 
 function Main() {
 
@@ -22,7 +23,7 @@ function Main() {
             {currentCat === "about-me" ?
             <AboutMe /> :
              currentCat === "projects" ?
-            "projects" :
+            <Projects /> :
             currentCat === "resume" ?
             <Resume /> :
             currentCat === "contact" ?
