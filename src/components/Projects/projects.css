@@ -6,7 +6,7 @@
     height: 100%;
     overflow: scroll;
     align-items: center;
-    color: #211c0f;
+    /* color: #211c0f; */
 }
 .project{
     margin-top: 3em;
