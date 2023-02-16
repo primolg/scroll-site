@@ -26,13 +26,13 @@ function App() {
     <div id="app">
       <div id="outer">
         <div id="scroll" onScroll={scrollFunc}>
-          <div className="item">
+          <div className="item border">
             <img src={amsterdam} alt="amsterdam" />
           </div>
-          <div className="item">
+          <div className="item border">
             <img src={newYork} alt="newYork" />
           </div>
-          <div className="item">
+          <div className="item border">
             <img src={paris} alt="paris" />
           </div>
           <div className="item">
