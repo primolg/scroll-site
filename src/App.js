@@ -1,12 +1,48 @@
+import { useState } from "react"
 //components
-import Main from "./components/Main";
-import Header from "./components/Header";
+import amsterdam from "./maps/amsterdam.png"
+import london from "./maps/london.png"
+import newYork from "./maps/newYork.png"
+import paris from "./maps/paris.png"
 
 function App() {
+
+  const [city, setCity] = useState("amsterdam");
+  const link = `https://www.google.com/search?q=${city}`;
+  function scrollFunc(){
+    const position = (document.querySelector("#scroll").scrollTop / document.querySelector("#scroll").clientHeight)
+    if (position > 2.6){
+      setCity("london");
+    } else if (position >= 1.6){
+      setCity("paris")
+    } else if (position >= 0.6){
+      setCity("newYork")
+    } else {
+      setCity("amsterdam")
+    }
+  }
+
   return(
     <div id="app">
-      <Header />
-      <Main />
+      <div id="outer">
+        <div id="scroll" onScroll={scrollFunc}>
+          <div className="item">
+            <img src={amsterdam} alt="amsterdam" />
+          </div>
+          <div className="item">
+            <img src={newYork} alt="newYork" />
+          </div>
+          <div className="item">
+            <img src={paris} alt="paris" />
+          </div>
+          <div className="item">
+            <img src={london} alt="london" />
+          </div>
+        </div>
+        <a className={city + " circle"} href={link}>
+            <p id="name">{city}</p>
+        </a>
+      </div>
     </div>
   );
 }
