@@ -25,7 +25,7 @@ a{
   height: 100vh;
   overflow: scroll;
   position: absolute;
-  background-color: wheat;
+  background-color: rgb(255, 248, 234);
 }
 
 .item{
@@ -35,7 +35,7 @@ a{
 }
 
 .border{
-  border-bottom: black 5px dashed;
+  border-bottom: rgb(66, 68, 110) 5px dashed;
 }
 .circle{
   display: flex;

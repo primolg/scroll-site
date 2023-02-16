@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { AiOutlineArrowRight } from 'react-icons/ai'
 //components
 import amsterdam from "./maps/amsterdam.png"
 import london from "./maps/london.png"
@@ -40,7 +41,7 @@ function App() {
           </div>
         </div>
         <a className={city + " circle"} href={link}>
-            <p id="name">{city}</p>
+            <h2 id="name"><AiOutlineArrowRight /></h2>
         </a>
       </div>
     </div>
