@@ -11,11 +11,11 @@ function App() {
   const link = `https://www.google.com/search?q=${city}`;
   function scrollFunc(){
     const position = (document.querySelector("#scroll").scrollTop / document.querySelector("#scroll").clientHeight)
-    if (position > 2.6){
+    if (position > 2.45){
       setCity("london");
-    } else if (position >= 1.6){
+    } else if (position >= 1.5){
       setCity("paris")
-    } else if (position >= 0.6){
+    } else if (position >= 0.55){
       setCity("newYork")
     } else {
       setCity("amsterdam")
